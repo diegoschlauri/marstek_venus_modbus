@@ -32,7 +32,7 @@ async def async_setup_entry(
 
     sel_defs = getattr(coordinator, "SELECT_DEFINITIONS", None)
 
-    # Defensive Normalisierung: akzeptiere Liste (bevorzugt) oder Mapping
+    # Defensive normalisation: accept list (preferred) or mapping
     try:
         if isinstance(sel_defs, dict):
             # Mapping {key: def} -> Liste mit gesetztem 'key'
