@@ -96,25 +96,25 @@
         "name": "MAC-adres"
       },
       "battery_soc": {
-        "name": "Batterij SOC"
+        "name": "Batterij SoC"
       },
       "battery_soc_1": {
-        "name": "Batterij pack 1 SOC"
+        "name": "Batterij pack 1 SoC"
       },
       "battery_soc_2": {
-        "name": "Batterij pack 2 SOC"
+        "name": "Batterij pack 2 SoC"
       },
       "battery_soc_3": {
-        "name": "Batterij pack 3 SOC"
+        "name": "Batterij pack 3 SoC"
       },
       "battery_soc_4": {
-        "name": "Batterij pack 4 SOC"
+        "name": "Batterij pack 4 SoC"
       },
       "battery_soc_5": {
-        "name": "Batterij pack 5 SOC"
+        "name": "Batterij pack 5 SoC"
       },
       "battery_soc_6": {
-        "name": "Batterij pack 6 SOC"
+        "name": "Batterij pack 6 SoC"
       },
       "battery_total_energy": {
         "name": "Batterij Totale Energie"
@@ -435,22 +435,48 @@
       "modbus_address": {
         "name": "Modbus-adres"
       },
-
+      "ac_offgrid_voltage": {
+        "name": "AC Off-grid Spanning"
+      },
+      "ac_offgrid_current": {
+        "name": "AC Off-grid Stroom"
+      },
+      "ac_offgrid_power": {
+        "name": "AC Off-grid Vermogen"
+      },
       "wifi_signal_strength": {
         "name": "WiFi-signaalsterkte"
       },
 
       "round_trip_efficiency_total": {
-        "name": "Totaal rondrendement"
+        "name": "Totaal rendement"
       },
       "round_trip_efficiency_monthly": {
-        "name": "Maandelijks rondrendement"
+        "name": "Maandelijks rendement"
       },
       "conversion_efficiency": {
         "name": "Conversierendement"
       },
       "stored_energy": {
-        "name": "Opgeslagen energie"
+        "name": "Opgeslagen Energie"
+      },
+      "mppt1_voltage": {
+        "name": "MPPT1 Spanning"
+      },
+      "mppt1_current": {
+        "name": "MPPT1 Stroom"
+      },
+      "mppt1_power": {
+        "name": "MPPT1 Vermogen"
+      },
+      "mppt2_voltage": {
+        "name": "MPPT2 Spanning"
+      },
+      "mppt2_current": {
+        "name": "MPPT2 Stroom"
+      },
+      "mppt2_power": {
+        "name": "MPPT2 Vermogen"
       },
 
       "mppt3_voltage": {

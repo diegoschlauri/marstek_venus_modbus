@@ -35,7 +35,7 @@ async def async_setup_entry(
     # Defensive normalisation: accept list (preferred) or mapping
     try:
         if isinstance(sel_defs, dict):
-            # Mapping {key: def} -> Liste mit gesetztem 'key'
+            # Mapping {key: def} -> List with set 'key'
             normalized: list[dict[str, Any]] = []
             for key, definition in sel_defs.items():
                 d = dict(definition or {})
@@ -43,12 +43,12 @@ async def async_setup_entry(
                 normalized.append(d)
             sel_defs = normalized
         elif isinstance(sel_defs, list):
-            # Sicherstellen, dass 'key' vorhanden ist
+            # Make sure that 'key' is present
             for d in sel_defs:
                 if "key" not in d:
                     raise ValueError(f"Select definition ohne 'key': {d}")
         else:
-            _LOGGER.error("SELECT_DEFINITIONS ist leer oder unbekannter Typ: %r", type(sel_defs))
+            _LOGGER.error("SELECT_DEFINITIONS is empty or unknown Typ: %r", type(sel_defs))
             sel_defs = []
     except Exception as err:
         _LOGGER.exception("Error normalising SELECT_DEFINITIONS: %s", err)
@@ -191,7 +191,7 @@ class MarstekSelect(CoordinatorEntity, SelectEntity):
 
         value = options_map[option]
 
-        # Optimistisch aktualisieren, damit HA sofort den neuen State zeigt
+        # Optimistically update the coordinator data so HA shows the new state immediately
         self.coordinator.data[self._key] = value
         self.async_write_ha_state()
 
