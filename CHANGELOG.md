@@ -1,4 +1,17 @@
 # Changelog
+# [2026.3.4] - 2026-03-23
+
+### Added
+
+- Battery cycle support:
+- Native cycle counter sensor via register `34003` for `a`, `d`, and `e_v3`.
+- Calculated cycle sensor (`battery_cycle_count_calc`) for all device profiles (`a`, `d`, `e_v3`, `e_v12`) based on `total_discharging_energy / battery_total_energy`.
+
+### Changed
+
+- Sensor setup in `sensor.py` refactored to a compact grouped entity creation loop.
+- Cycle sensor translation labels aligned across locales and naming simplified (`Cycle Count` / `Cycle Count (Calc)`).
+
 # [2026.3.3] - 2026-03-04
 
 ### Added
