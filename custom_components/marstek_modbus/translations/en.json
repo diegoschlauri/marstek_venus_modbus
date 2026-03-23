@@ -150,10 +150,10 @@
         "name": "Total Discharging Energy"
       },
       "battery_cycle_count": {
-        "name": "Cycle Count"
+        "name": "Full Cycles (BMS)"
       },
       "battery_cycle_count_calc": {
-        "name": "Cycle Count (Calc)"
+        "name": "Full Cycles (calculated)"
       },
       "total_daily_charging_energy": {
         "name": "Daily Charging Energy"
@@ -494,7 +494,6 @@
       "mppt4_power": {
         "name": "MPPT4 Power"
       },
-
       "bluetooth_status": {
         "name": "Bluetooth Status",
         "state": {
@@ -507,17 +506,16 @@
       }
     },
     "binary_sensor": {
-      "wifi_status": { 
-        "name": "WiFi Status" 
+      "wifi_status": {
+        "name": "WiFi Status"
       },
-      "cloud_status": { 
-        "name": "Cloud Status" 
+      "cloud_status": {
+        "name": "Cloud Status"
       },
-      "discharge_limit_mode": { 
-        "name": "Discharge Limit" 
+      "discharge_limit_mode": {
+        "name": "Discharge Limit"
       }
     },
-
     "select": {
       "user_work_mode": {
         "name": "User Work Mode",
@@ -623,7 +621,6 @@
         }
       }
     },
-
     "switch": {
       "backup_function": {
         "name": "Backup Function"
@@ -690,7 +687,6 @@
       "schedule_6_start": {
         "name": "Schedule 6 Start"
       },
-
       "schedule_1_end": {
         "name": "Schedule 1 End"
       },

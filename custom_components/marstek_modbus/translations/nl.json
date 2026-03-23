@@ -156,10 +156,10 @@
         "name": "Totale Ontlaadenergie"
       },
       "battery_cycle_count": {
-        "name": "Cycli"
+        "name": "Volledige cycli (BMS)"
       },
       "battery_cycle_count_calc": {
-        "name": "Cycli (Calc)"
+        "name": "Volledige cycli (Calc)"
       },
       "total_daily_charging_energy": {
         "name": "Dagelijkse Oplaadenergie"
@@ -223,7 +223,7 @@
       },
       "battery_1_cell_13_voltage": {
         "name": "Batterij pack 1 Cel 13 Spanning"
-      }
+      },
       "battery_2_cell_1_voltage": {
         "name": "Batterij pack 2 Cel 1 Spanning"
       },
@@ -437,7 +437,6 @@
       "alarm_status": {
         "name": "Alarmstatus"
       },
-
       "modbus_address": {
         "name": "Modbus-adres"
       },
@@ -453,7 +452,6 @@
       "wifi_signal_strength": {
         "name": "WiFi-signaalsterkte"
       },
-
       "round_trip_efficiency_total": {
         "name": "Totaal rendement"
       },
@@ -484,7 +482,6 @@
       "mppt2_power": {
         "name": "MPPT2 Vermogen"
       },
-
       "mppt3_voltage": {
         "name": "MPPT3 Spanning"
       },
@@ -503,7 +500,6 @@
       "mppt4_power": {
         "name": "MPPT4 Vermogen"
       },
-
       "bluetooth_status": {
         "name": "Bluetooth-status",
         "state": {
@@ -515,7 +511,6 @@
         }
       }
     },
-
     "binary_sensor": {
       "wifi_status": {
         "name": "WiFi-status"
@@ -527,7 +522,6 @@
         "name": "Ontlaadlimiet"
       }
     },
-
     "select": {
       "user_work_mode": {
         "name": "Gebruikersmodus",
@@ -560,7 +554,6 @@
           "China": "China"
         }
       },
-
       "schedule_1_days": {
         "name": "Schema 1 Dagen",
         "state": {

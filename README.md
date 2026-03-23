@@ -114,7 +114,7 @@ Below is a per-key table showing descriptive fields and the register defined in 
 | total_daily_discharging_energy    | Total daily discharging energy             | int32   | 4    | 0.01   | kWh  | 33006 | 33006 | 33006 | 33006 |
 | total_monthly_charging_energy     | Total monthly charging energy              | uint32  | 4    | 0.01   | kWh  | 33008 | 33008 | 33008 | 33008 |
 | total_monthly_discharging_energy  | Total monthly discharging energy           | int32   | 4    | 0.01   | kWh  | 33010 | 33010 | 33010 | 33010 |
-| battery_cycle_count               | Native cycle counter                       | uint16  | 2    | 1      | cycles | 34003 | 34003 |       | 34003 |
+| battery_cycle_count               | Native cycle counter                       | uint16  | 2    | 1      | -    | 34003 | 34003 |       | 34003 |
 | ac_voltage                        | AC voltage                                 | uint16  | 2    | 0.1    | V    | 32200 | 32200 | 32200 | 32200 |
 | ac_current                        | AC current                                 | int16   | 2    | 0.004/0.01| A  | 37004 | 37004 | 32201 | 37004 |
 | ac_power                          | AC power                                   | int16/32| 2/4  | 1      | W    | 30006 | 30006 | 32202 | 30006 |
@@ -274,7 +274,7 @@ Below is a per-key table showing descriptive fields and the register defined in 
 | round_trip_efficiency_monthly     | Round-trip efficiency (monthly charge/discharge) | calculated | - | - | % |  |  |  |  |
 | conversion_efficiency             | Conversion efficiency (battery ↔ AC)       | calculated | - | - | % |  |  |  |  |
 | stored_energy                     | Stored battery energy (SOC × capacity)     | calculated | - | - | kWh |  |  |  |  |
-| battery_cycle_count_calc          | Cycle count calculated from total discharge and capacity | calculated | - | - | cycles |  |  |  |  |
+| battery_cycle_count_calc          | Cycle count calculated from total discharge and capacity | calculated | - | - | - |  |  |  |  |
 
 _Notes:_
 - Columns `a`, `d`, `e_v12` and `e_v3` correspond to the YAML files under `custom_components/marstek_modbus/registers/`.

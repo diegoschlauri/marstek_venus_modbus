@@ -228,7 +228,6 @@ SENSOR_DEFINITIONS:
     battery_cycle_count:
         register: 34003
         scale: 1
-        unit: cycles
         icon: "mdi:counter"
         state_class: total_increasing
         category: diagnostic

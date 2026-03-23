@@ -648,7 +648,6 @@ SWITCH_DEFINITIONS:
         category: config
         scan_interval: very_low
 
-
 NUMBER_DEFINITIONS:
     set_charge_power:
         register: 42020
