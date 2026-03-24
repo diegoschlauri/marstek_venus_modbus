@@ -147,10 +147,10 @@
         "name": "Gesamte Entladeenergie"
       },
       "battery_cycle_count": {
-        "name": "Zyklen"
+        "name": "Vollzyklen (BMS)"
       },
       "battery_cycle_count_calc": {
-        "name": "Zyklen (Calc)"
+        "name": "Vollzyklen (berechnet)"
       },
       "total_daily_charging_energy": {
         "name": "Tägliche Ladeenergie"
