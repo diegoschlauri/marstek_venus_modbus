@@ -583,7 +583,7 @@ SELECT_DEFINITIONS:
         enabled_by_default: false
         scan_interval: high
         options:
-            stop: 0
+            standby: 0
             charge: 1
             discharge: 2
     schedule_1_days:
