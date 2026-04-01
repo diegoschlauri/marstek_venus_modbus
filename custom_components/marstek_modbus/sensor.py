@@ -177,17 +177,17 @@ class MarstekSensor(CoordinatorEntity, SensorEntity):
 
     @property
     def suggested_display_precision(self) -> int | None:
-        """Suggest display precision based on definition, but only for numeric values."""
+        """Suggest display precision based on definition, but only if not a string or mapped state."""
         if self.states:
             return None
         return self.definition.get("precision")
 
     @property
     def suggested_display_unit(self) -> str | None:
-        """Suggest display unit based on definition, but only if not a mapped state."""
+        """Suggest display unit based on definition, but only if not a string or mapped state."""
         if self.states:
             return None
-        return self.definition.get("unit") or self.native_unit_of_measurement
+        return self.definition.get("unit")
 
     @property
     def device_info(self) -> dict:
