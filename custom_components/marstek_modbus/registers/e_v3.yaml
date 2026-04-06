@@ -115,7 +115,6 @@ SENSOR_DEFINITIONS:
         data_type: int16
         precision: 1
         scan_interval: medium
-    # register: 30000 not needed as low-resolution duplicate of battery_voltage (register 30100)
     battery_power:
         register: 30001
         count: 1
@@ -127,10 +126,6 @@ SENSOR_DEFINITIONS:
         data_type: int16
         precision: 1
         scan_interval: high
-    # register: 30002 not needed as low-resolution duplicate of internal_mos1_temperature (register 35001)
-    # register: 30003 not needed as low-resolution duplicate of internal_mos2_temperature (register 35002)
-    # register: 30004 not needed as low-resolution duplicate of ac_voltage (register 32200)
-    # register: 30005 not needed as low-resolution duplicate of ac_offgrid_voltage (register 32300)
     internal_temperature:
         register: 35000
         scale: 0.1
@@ -192,7 +187,6 @@ SENSOR_DEFINITIONS:
         data_type: int16
         precision: 0
         scan_interval: high
-    # register: 30007 not needed as identical to ac_offgrid_power (register 32302)
     ac_frequency:
         register: 32204
         scale: 0.1
